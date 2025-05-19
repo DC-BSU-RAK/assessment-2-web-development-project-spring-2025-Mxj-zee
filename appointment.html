@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Appointment | MindEase Wellness Center</title>
+  <link rel="stylesheet" href="CSS/Appointment.css" />
+</head>
+<body>
+  <header>
+    <h1>MindEase Wellness Center</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="appointment.html" class="active">Book Appointment</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-content">
+      <h2>Book an Appointment</h2>
+      <form class="appointment-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="mental-therapy">Mental Therapy</option>
+          <option value="physical-therapy">Physical Therapy</option>
+          <option value="nutrition-counseling">Nutrition Counseling</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message or questions" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MindEase Wellness Center</p>
+  </footer>
+
+  <!-- 👇 JavaScript link added here -->
+  <script src="JS/Appointment.js"></script>
+</body>
+</html>

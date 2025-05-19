@@ -1,0 +1,179 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4fdfc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2b6777;
+    color: white;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.4em;
+    margin-bottom: 0.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    margin-top: 0.8em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1.1em;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #52ab98;
+  }
+  
+  /* Main about page container */
+  .about-page {
+    max-width: 1100px;
+    margin: 3em auto 4em auto;
+    padding: 0 1em;
+  }
+  
+  /* Intro section */
+  .intro {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  
+  .intro h2 {
+    font-size: 2.6em;
+    color: #2b6777;
+    margin-bottom: 0.5em;
+  }
+  
+  .intro p {
+    font-size: 1.2em;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #444;
+  }
+  
+  /* Profile section */
+  .profile {
+    display: flex;
+    gap: 2.5em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 1em;
+  }
+  
+  .profile-img {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .profile-img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .profile-details {
+    flex: 2 1 450px;
+  }
+  
+  .profile-details h3 {
+    color: #2b6777;
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+  }
+  
+  .profile-details ul {
+    list-style-type: disc;
+    padding-left: 1.4em;
+    margin-bottom: 2em;
+    color: #555;
+  }
+  
+  .profile-details li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+  
+  .profile-details p {
+    font-size: 1.05em;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  /* Quote section */
+  .quote-section {
+    margin-top: 3em;
+    background-color: #e8f7f4;
+    border-left: 6px solid #2b6777;
+    padding: 1.8em 2em;
+    font-style: italic;
+    font-size: 1.25em;
+    color: #2b6777;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(43,103,119,0.15);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2b6777;
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+    font-size: 0.95em;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.7em;
+    }
+  
+    .intro h2 {
+      font-size: 2em;
+    }
+  
+    .profile {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-details {
+      width: 100%;
+    }
+  
+    .quote-section {
+      font-size: 1.1em;
+      padding: 1.5em 1.2em;
+      max-width: 100%;
+    }
+  }
+  
